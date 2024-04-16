@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Connections Game</title>
+
+        <link
+            href="https://fonts.cdnfonts.com/css/franklin-gothic"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet" />
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Calculus Connections</h1>
+            <div id="grid" class="grid">
+                <!-- Grid items will be dynamically generated here -->
+            </div>
+            <!-- <button id="submit">Submit</button> -->
+            <div id="feedback"></div>
+            <!-- <button id="hint">Get Hint</button>
+            <button id="shuffle">Shuffle</button>
+            <button id="deselect">Deselect All</button> -->
+            <div id="buttonContainer">
+                <div id="topButtons">
+                    <button id="shuffle">Shuffle</button>
+                    <button id="deselect">Deselect All</button>
+                    <button id="submit">Submit</button>
+                </div>
+                <button id="hint">Hint</button>
+            </div>
+
+            <div id="gameOverModal" class="modal">
+                <div class="modal-content">
+                    <h2>Game Over!</h2>
+                    <p>Thanks for playing Calculus Connections.</p>
+                    <button id="closeModal">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
