@@ -8,8 +8,10 @@ const deselectButton = document.getElementById("deselect");
 
 const puzzles = [
     {
-        category: "Non-Negative Domain",
-        options: ["x³ - 1/√x", "√x", "ln(x)", "∜x"],
+        // category: "Non-Negative Domain",
+        // options: ["x³ - 1/√x", "√x", "ln(x)", "∜x"],
+        category: "Indeterminate form",
+        options: ["∞/∞", "0/0", "∞-0", "∞⁰"],
         color: "#f9df6d",
     },
     {
@@ -162,15 +164,18 @@ function createFractionRepresentation(fractionString) {
     fractionContainer.appendChild(denominatorElement);
 
     // Prevent click event propagation to grid item
-    fractionContainer.addEventListener("click", function (event) {
-        event.stopPropagation();
-    });
+    // fractionContainer.addEventListener("click", function (event) {
+    //     event.stopPropagation();
+    // });
 
     return fractionContainer;
 }
 
 function toggleSelection(event) {
-    const gridItem = event.target;
+    let gridItem = event.target;
+    while (!gridItem.classList.contains("grid-item")) {
+        gridItem = gridItem.parentElement;
+    }
     if (gridItem.classList.contains("selected")) {
         gridItem.classList.remove("selected");
         selectedOptions = selectedOptions.filter(
