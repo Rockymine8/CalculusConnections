@@ -11,7 +11,8 @@ const puzzles = [
         // category: "Non-Negative Domain",
         // options: ["x³ - 1/√x", "√x", "ln(x)", "∜x"],
         category: "Indeterminate form",
-        options: ["∞/∞", "0/0", "∞-0", "∞⁰"],
+        // options: ["∞/∞", "0/0", "∞-∞", "∞⁰"],
+        options: ["∞/∞", "0/0", "∞-∞", "∞+∞"],
         color: "#b0c4ef",
     },
     {
