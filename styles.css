@@ -146,6 +146,9 @@ button:hover {
     pointer-events: none;
 } */
 @media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
     .container {
         padding: 10px;
     }
