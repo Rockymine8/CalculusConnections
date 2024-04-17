@@ -220,7 +220,7 @@ function checkSelection() {
                 gameOver();
             }
         } else {
-            feedbackElement.textContent = "Please select exactly four items.";
+            feedbackElement.textContent = "Incorrect. Please try again.";
         }
     } else {
         feedbackElement.textContent = "Please select exactly four items.";
