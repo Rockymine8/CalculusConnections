@@ -90,6 +90,8 @@ button:hover {
 }
 
 .big-rectangle {
+    display: flex;
+    flex-direction: column;
     grid-column: span 4;
 }
 
