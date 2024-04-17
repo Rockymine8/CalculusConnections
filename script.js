@@ -12,7 +12,7 @@ const puzzles = [
         // options: ["x³ - 1/√x", "√x", "ln(x)", "∜x"],
         category: "Indeterminate form",
         options: ["∞/∞", "0/0", "∞-0", "∞⁰"],
-        color: "#f9df6d",
+        color: "#b0c4ef",
     },
     {
         category: "Continuous but not differentiable",
